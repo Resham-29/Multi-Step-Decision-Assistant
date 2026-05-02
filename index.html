@@ -92,9 +92,22 @@
   <script type="module">
     import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
     Chatbot.init({
-        chatflowid: "35b0f3dc-4de3-4095-8641-1cd79b0ed5ec",
-        apiHost: "https://cloud.flowiseai.com",
-    })
+    chatflowid: "YOUR_CHATFLOW_ID",
+    apiHost: "https://cloud.flowiseai.com",
+    theme: {
+      button: {
+        size: "large"
+      },
+      chatWindow: {
+        showTitle: true,
+        title: "AI Assistant",
+        welcomeMessage: "Hi! I can help you make smart decisions 🚀",
+        backgroundColor: "#ffffff",
+        height: 600,
+        width: 400
+      }
+    }
+  })
 </script>
 </div>
 ```
