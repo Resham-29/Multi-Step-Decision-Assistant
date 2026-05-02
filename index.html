@@ -46,33 +46,25 @@
       box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
 
-    /* 🔥 REMOVE DARK EMPTY BOX LOOK */
-    .chat-box {
-      width: 420px;
-      height: 540px;
-      border-radius: 16px;
-      overflow: hidden;
-      background: transparent;
-    }
-
     footer {
       text-align: center;
       padding: 20px;
       color: #64748b;
     }
 
-    /* 🔥 BIGGER CHAT BUTTON */
+    /* 🔥 Bigger chatbot button */
     #flowise-chatbot-button {
-      transform: scale(1.5) !important;
-      bottom: 30px !important;
-      right: 30px !important;
+      transform: scale(1.8) !important;
+      bottom: 40px !important;
+      right: 40px !important;
     }
-
   </style>
 
 </head>
 
 <body>
+
+  <!-- HERO SECTION -->
 
   <div class="hero">
     <div class="left">
@@ -87,36 +79,65 @@
     <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01" alt="AI Illustration">
   </div>
 </div>
+```
 
-<div class="chat-box">
-  <script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
-    Chatbot.init({
-    chatflowid: "35b0f3dc-4de3-4095-8641-1cd79b0ed5ec",
-    apiHost: "https://cloud.flowiseai.com",
-    theme: {
-      button: {
-        size: "large"
-      },
-      chatWindow: {
-        showTitle: true,
-        title: "AI Assistant",
-        welcomeMessage: "Hi! I can help you make smart decisions 🚀",
-        backgroundColor: "#ffffff",
-        height: 600,
-        width: 400
-      }
-    }
-  })
-</script>
+  </div>
+
+  <!-- WHY USE SECTION -->
+
+  <div style="padding: 60px; text-align: center;">
+    <h2 style="font-size: 32px;">Why Use This AI?</h2>
+
+```
+<div style="display: flex; justify-content: center; gap: 40px; margin-top: 40px; flex-wrap: wrap;">
+
+  <div style="max-width: 250px;">
+    <h3>🧠 Smart Decisions</h3>
+    <p>AI analyzes your inputs step-by-step to guide you to the best choice.</p>
+  </div>
+
+  <div style="max-width: 250px;">
+    <h3>⚡ Fast Guidance</h3>
+    <p>Get instant recommendations for career, learning, or personal goals.</p>
+  </div>
+
+  <div style="max-width: 250px;">
+    <h3>🎯 Personalized</h3>
+    <p>Tailored suggestions based on your needs and preferences.</p>
+  </div>
+
 </div>
 ```
 
   </div>
 
+  <
+
   <footer>
-    © 2026 AI Decision Assistant. All rights reserved.
+    © 2026 AI Decision Assistant. All rights reserved.<br>
+    Made By: Resham Pise | Roll No: B25BS1280
   </footer>
+
+  
+
+  <script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+
+    Chatbot.init({
+      chatflowid: "35b0f3dc-4de3-4095-8641-1cd79b0ed5ec",
+      apiHost: "https://cloud.flowiseai.com",
+      theme: {
+        button: { size: "large" },
+        chatWindow: {
+          showTitle: true,
+          title: "AI Assistant",
+          welcomeMessage: "Hi! I can help you make smart decisions 🚀",
+          height: 600,
+          width: 400
+        }
+      }
+    })
+  </script>
 
 </body>
 </html>
