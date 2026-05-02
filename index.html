@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Decision Assistant</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 40px;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #60a5fa;
+    }
+
+    .btn {
+      background: linear-gradient(135deg, #6366f1, #3b82f6);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 80px 60px;
+    }
+
+    .left {
+      max-width: 50%;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #94a3b8;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .buttons button {
+      margin-right: 15px;
+    }
+
+    .secondary {
+      background: transparent;
+      border: 1px solid #64748b;
+    }
+
+    .chat-box {
+      width: 380px;
+      height: 500px;
+      background: #020617;
+      border-radius: 12px;
+      border: 1px solid #1e293b;
+      overflow: hidden;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #64748b;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div class="logo">AI Decision Assistant</div>
+    <button class="btn">Get Started</button>
+  </div>
+
+  <div class="hero">
+    <div class="left">
+      <h1>Smart AI Decision Making</h1>
+      <p>
+        Get step-by-step guidance for career, learning, and life decisions. 
+        Powered by advanced AI reasoning and structured thinking.
+      </p>
+
+```
+  <div class="buttons">
+    <button class="btn">Try Now</button>
+    <button class="btn secondary">Learn More</button>
+  </div>
+</div>
+
+<div class="chat-box">
+  <script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+        chatflowid: "35b0f3dc-4de3-4095-8641-1cd79b0ed5ec",
+        apiHost: "https://cloud.flowiseai.com",
+    })
+</script>
+</div>
+```
+
+  </div>
+
+  <footer>
+    © 2026 AI Decision Assistant. All rights reserved.
+  </footer>
+
+</body>
+</html>
